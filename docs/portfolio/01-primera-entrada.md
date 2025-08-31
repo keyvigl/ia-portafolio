@@ -287,7 +287,7 @@ plt.tight_layout()
 plt.show()
 ```
 ### Salida
-
+![Perfil](../assets/01EDA.png)
 
 
 ### ❓ Preguntas para el equipo
@@ -310,7 +310,19 @@ plt.show()
 
 
 ## Evidencias
-- Enlace a material o capturas en `docs/assets/`
+- Capturas de los gráficos del EDA.
+- Dataset procesado.
+- [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1F0btMIVnncma9EYwR-2togcSPDW35evv?usp=sharing) — Notebook completo en Google Colab.
 
 ## Reflexión
-Lo más desafiante, lo más valioso, próximos pasos.
+
+- 🔧 **Lo más desafiante:**  
+  Manejar los valores faltantes (especialmente en `Age` y `Cabin`) y decidir cómo imputarlos de forma adecuada sin distorsionar los datos.  
+
+- 🌟 **Lo más valioso:**  
+  Comprender qué variables influyen realmente en la supervivencia (`Sex`, `Pclass`, `Age`) y visualizar estos patrones con gráficos claros.  
+
+- 🔮 **Próximos pasos:**  
+  - Implementar un modelo de clasificación sencillo (ej. Regresión Logística) y compararlo con un baseline.  
+  - Probar nuevas features derivadas (ej. `FamilySize`, `Title`, `HasCabin`).  
+  - Evaluar métricas más allá de la accuracy (precision, recall, F1).  
