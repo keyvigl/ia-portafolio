@@ -9,6 +9,6 @@ Bienvenido a las entradas del portafolio. Usá la plantilla para crear nuevas p�
 (`01-...`, `02-...`).
 
 - Plantilla: [plantilla.md](plantilla.md)
-- Práctica 1: EDA del Titanic en Google Colab: [01-primera-entrada.md](01-primera-entrada.md)
-- Práctica 2: EDA del Titanic en Google Colab: [02-Feature-Engineering](02-Feature-Engineering.md)
+- Primera entrada: [01-primera-entrada.md](01-primera-entrada.md)
+- Práctica 2: Feature Engineering simple + Modelo base: [02-Feature-Engineering.md](02-Feature-Engineering.md)
 
