@@ -10,5 +10,5 @@ Bienvenido a las entradas del portafolio. Usá la plantilla para crear nuevas p�
 
 - Plantilla: [plantilla.md](plantilla.md)
 - Práctica 1: EDA del Titanic en Google Colab: [01-primera-entrada.md](01-primera-entrada.md)
-- Práctica 1: EDA del Titanic en Google Colab: [02-Feature-Engineering](02-Feature-Engineering)
+- Práctica 2: EDA del Titanic en Google Colab: [02-Feature-Engineering](02-Feature-Engineering.md)
 
