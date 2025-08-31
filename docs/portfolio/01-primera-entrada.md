@@ -288,7 +288,6 @@ plt.show()
 ```
 ### Salida
 
-![Evidencia](assets/01EDA.png)
 
 
 ### ❓ Preguntas para el equipo
