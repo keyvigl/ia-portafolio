@@ -300,7 +300,7 @@ COMPARACIÓN DE ESTABILIDAD:
   plt.boxplot([scores_kfold, scores_stratified], labels=['KFold', 'StratifiedKFold'])
   ```
 
-![02VAL](assets/02VAL.png)
+![02VAL](../assets/02VAL.png)
 
 
  📌 Interpretación
@@ -493,7 +493,7 @@ ANÁLISIS DE ESTABILIDAD:
 /tmp/ipython-input-1230983371.py:79: MatplotlibDeprecationWarning: The 'labels' parameter of boxplot() has been renamed 'tick_labels' since Matplotlib 3.9; support for the old name will be dropped in 3.11.
   plt.boxplot([results[name] for name in models.keys()],
 ```
-![02VAL](assets/002VAL.png)
+![02VAL](../assets/002VAL.png)
 
  Interpretación
 
@@ -897,7 +897,7 @@ Age at enrollment: 0.0372
 Curricular units 1st sem (evaluations): 0.0349
 Previous qualification (grade): 0.0343
 ```
-![0002VAL](assets/0002VAL.png)
+![0002VAL](../assets/0002VAL.png)
 ```text
 IMPORTANCIA POR CATEGORÍAS:
 Factores académicos: 0.6443
@@ -929,7 +929,7 @@ Tuition fees up to date: 1.00 (importancia: 0.0466)
 VISUALIZACIÓN DE ÁRBOLES DEL RANDOM FOREST:
 Mostrando 3 árboles de 100 totales
 ```
-![0002VAL](assets/00002VAL.png)
+![0002VAL](../assets/00002VAL.png)
 ```text
 ESTADÍSTICAS DE LOS ÁRBOLES:
 Profundidad promedio (primeros 5 árboles): 21.2
