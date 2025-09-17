@@ -33,7 +33,7 @@ También se busca comprender cómo evitar el **sobreajuste (overfitting)** y gar
 !pip install ucimlrepo
 ```
 #### Salida:
-```python
+```text
 Collecting ucimlrepo
   Downloading ucimlrepo-0.0.7-py3-none-any.whl.metadata (5.5 kB)
 Requirement already satisfied: pandas>=1.0.0 in /usr/local/lib/python3.12/dist-packages (from ucimlrepo) (2.2.2)
@@ -47,7 +47,7 @@ Downloading ucimlrepo-0.0.7-py3-none-any.whl (8.0 kB)
 Installing collected packages: ucimlrepo
 Successfully installed ucimlrepo-0.0.7
 ```
------------------
+
 ```text
 # Importar librerías que vamos a usar
 import pandas as pd
