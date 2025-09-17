@@ -5,23 +5,41 @@ date: 2025-01-01
 
 # Práctica 1: EDA del Titanic en Google Colab
 
-## Contexto
-Exploramos el dataset **Titanic: Machine Learning from Disaster** de Kaggle.  
-Se trata de un problema de **clasificación binaria**: predecir si un pasajero sobrevivió (`Survived=1`) o no (`Survived=0`).  
+!!! abstract "Ficha rápida"
+    **Dataset:** Titanic – Machine Learning from Disaster (Kaggle)  
+    **Notebook:** [Abrir en Colab](https://colab.research.google.com/drive/1ut5NvjzklgNwS8wfOD07xslXUY7flhu4?usp=sharing)  
+    **Rol:** Análisis exploratorio con foco en limpieza, visualización y hallazgos accionables.
+
+## 🚀 Resumen ejecutivo
+- Se configuró el entorno en Google Colab y se automatizó la descarga del dataset vía Kaggle API.
+- Se realizó un EDA completo para comprender la composición de pasajeros, distribuciones y valores faltantes.
+- Se identificaron los factores más influyentes en la supervivencia y los principales riesgos de calidad de datos.
+
+## 🎯 Objetivos
+- Conocer la estructura del dataset y sus principales variables.
+- Practicar **EDA (Exploratory Data Analysis)** con Pandas, Matplotlib y Seaborn.
+- Identificar factores relevantes para la supervivencia y documentarlos claramente.
+- Detectar problemas de calidad de datos (faltantes, outliers, correlaciones) de cara a futuros modelos.
+
+## 🕒 Agenda de trabajo
+
+| Actividad | Propósito | Tiempo |
+|-----------|-----------|:------:|
+| Investigación del dataset | Revisar documentación y entender el reto de Kaggle. | 10 min |
+| Setup en Colab | Preparar dependencias y estilo de visualización. | 5 min |
+| Cargar datos con Kaggle API | Asegurar reproducibilidad en la descarga del dataset. | 10 min |
+| EDA descriptiva y visual | Explorar variables clave, distribuciones y correlaciones. | 15 min |
+| Documentación y discusión | Registrar hallazgos y preparar conclusiones. | 10 min |
+
+## 📚 Contexto
+Exploramos el dataset **Titanic: Machine Learning from Disaster** de Kaggle.
+Se trata de un problema de **clasificación binaria**: predecir si un pasajero sobrevivió (`Survived=1`) o no (`Survived=0`).
 La competencia busca que los participantes apliquen técnicas de EDA, ingeniería de variables y modelos de machine learning.
 
-## Objetivos
-- Conocer la estructura del dataset.
-- Practicar **EDA (Exploratory Data Analysis)** con Pandas, Matplotlib y Seaborn.
-- Identificar factores relevantes para la supervivencia.
-- Detectar problemas de calidad de datos (faltantes, outliers, correlaciones).
-
-## Actividades (con tiempos estimados)
-- Investigación del dataset — 10 min  
-- Setup en Colab — 5 min  
-- Cargar datos con Kaggle API — 10 min  
-- EDA descriptiva y visual — 15 min  
-- Documentación y discusión — 10 min  
+## 🔍 Insights destacados
+- Mayor probabilidad de supervivencia en mujeres, niños y pasajeros de primera clase.
+- Columnas `Age`, `Cabin` y `Embarked` requieren estrategias de imputación específicas antes del modelado.
+- Las variables socioeconómicas (`Pclass`, `Fare`) muestran correlaciones útiles para construir características derivadas.
 
 ## Desarrollo
 ### 📖 Investigación inicial

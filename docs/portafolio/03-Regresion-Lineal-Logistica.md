@@ -3,32 +3,41 @@ title: "Tarea: Regresión Lineal y Logística - Fill in the Blanks"
 date: 2025-01-01
 ---
 
-# 📝 Tarea : Regresión Lineal y Logística - Fill in the Blanks
+# 📝 Tarea: Regresión Lineal y Logística - Fill in the Blanks
 
+!!! abstract "Ficha rápida"
+    **Datasets:** Boston Housing (regresión) y Breast Cancer Wisconsin (clasificación).  
+    **Notebook:** [Abrir en Colab](https://colab.research.google.com/drive/1ut5NvjzklgNwS8wfOD07xslXUY7flhu4?usp=sharing#scrollTo=regresion-lineal-logistica)  
+    **Rol:** Resolver ejercicios guiados *fill in the blanks* reforzando fundamentos de modelos supervisados.
 
----
-
-## 📌 Contexto
-En esta tarea se aplican modelos de **Regresión Lineal** y **Regresión Logística** con el objetivo de comparar cómo se comportan en problemas distintos:  
-- **Regresión Lineal** → predecir precios de casas en Boston.  
-- **Regresión Logística** → diagnóstico de cáncer de mama (benigno o maligno).  
-
----
+## 🚀 Resumen ejecutivo
+- Se construyeron pipelines independientes para los problemas de regresión y clasificación, reutilizando utilidades comunes.
+- Se recopilaron métricas clave (MAE, RMSE, R², accuracy, precision, recall) para comparar desempeño y comunicar resultados.
+- Se documentó la interpretación de salidas y se respondieron reflexiones críticas sobre cada enfoque.
 
 ## 🎯 Objetivos
-- Implementar un modelo de regresión lineal para predecir precios de casas y evaluar su desempeño.  
-- Implementar un modelo de regresión logística para clasificar diagnósticos médicos y evaluar sus métricas.  
-- Comparar ambos enfoques y reflexionar sobre sus diferencias, alcances y limitaciones.  
+- Implementar un modelo de regresión lineal para predecir precios de casas y evaluar su desempeño.
+- Implementar un modelo de regresión logística para clasificar diagnósticos médicos y evaluar sus métricas.
+- Comparar ambos enfoques y reflexionar sobre sus diferencias, alcances y limitaciones.
 
----
+## 🕒 Agenda de trabajo
 
-## 🕒 Actividades (con tiempos estimados)
-| Actividad                                | Tiempo estimado |
-|------------------------------------------|----------------:|
-| Importar librerías y preparar datasets    | 20 min |
-| Entrenar y evaluar Regresión Lineal       | 40 min |
-| Entrenar y evaluar Regresión Logística    | 40 min |
-| Responder preguntas de reflexión          | 20 min |
+| Actividad | Propósito | Tiempo |
+|-----------|-----------|:------:|
+| Importar librerías y preparar datasets | Unificar dependencias y revisar estructuras de datos. | 20 min |
+| Entrenar y evaluar Regresión Lineal | Medir errores absolutos y relativos sobre Boston Housing. | 40 min |
+| Entrenar y evaluar Regresión Logística | Analizar desempeño en clasificación de cáncer de mama. | 40 min |
+| Responder preguntas de reflexión | Extraer aprendizajes y contrastar ambos algoritmos. | 20 min |
+
+## 📚 Contexto
+En esta tarea se aplican modelos de **Regresión Lineal** y **Regresión Logística** con el objetivo de comparar cómo se comportan en problemas distintos:
+- **Regresión Lineal** → predecir precios de casas en Boston.
+- **Regresión Logística** → diagnóstico de cáncer de mama (benigno o maligno).
+
+## 🔍 Insights destacados
+- Las métricas de regresión permiten cuantificar el error monetario promedio y porcentual de las predicciones inmobiliarias.
+- La clasificación médica requiere monitorear precisión y recall para mitigar falsos negativos en diagnósticos.
+- Los ejercicios reforzaron cuándo elegir cada algoritmo según la naturaleza de la variable objetivo (continua vs. categórica).
 
 ---
 

@@ -5,25 +5,46 @@ date: 2025-01-01
 
 # Plantilla de entrada de portafolio
 
-Completa esta plantilla para cada entrada del portafolio.
+Usá esta plantilla como base para mantener un formato consistente en todo el portafolio.
 
-## Contexto
-Breve descripción del tema/actividad.
+!!! abstract "Ficha rápida"
+    **Dataset:** Nombre del dataset o fuente principal.  
+    **Notebook:** [Enlace a Colab o repositorio](https://...).  
+    **Rol:** Breve descripción del foco de la práctica (EDA, modelado, visualización, etc.).
 
-## Objetivos
-- Objetivo específico y medible
+## 🚀 Resumen ejecutivo
+- ¿Qué se hizo en esta práctica?
+- ¿Cuáles fueron los principales resultados?
+- ¿Qué decisión o aprendizaje clave surgió?
 
-## Actividades (con tiempos estimados)
-- Tarea X — 45 min
+## 🎯 Objetivos
+- Objetivo específico y medible 1.
+- Objetivo específico y medible 2.
+
+## 🕒 Agenda de trabajo
+
+| Actividad | Propósito | Tiempo |
+|-----------|-----------|:------:|
+| Ejemplo de actividad | ¿Para qué se realiza? | 30 min |
+| ... | ... | ... |
+
+## 📚 Contexto
+Breve descripción del tema o actividad. Explicá el problema que se aborda y por qué es relevante.
+
+## 🔍 Insights destacados
+- Insight 1.
+- Insight 2.
+- Insight 3.
 
 ## Desarrollo
-Resumen de lo realizado, decisiones y resultados intermedios.
+Resumen de lo realizado, decisiones y resultados intermedios. Podés usar subsecciones, admoniciones o bloques de código.
 
 ## Evidencias
-- Capturas, enlaces a notebooks/repos, resultados, gráficos
+- Capturas, enlaces a notebooks/repos, resultados, gráficos.
+- Incluí recursos en `docs/assets/` cuando corresponda.
 
 ## Reflexión
-- Qué aprendiste, qué mejorarías, próximos pasos
+- Qué aprendiste, qué mejorarías, próximos pasos.
 
 ## Referencias
 - Fuentes consultadas con enlaces relativos cuando corresponda

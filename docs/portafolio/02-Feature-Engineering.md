@@ -1,4 +1,3 @@
-
 ---
 title: "Práctica 2: Feature Engineering simple + Modelo base"
 date: 2025-01-01
@@ -6,36 +5,54 @@ date: 2025-01-01
 
 # ⚙️ Práctica 2: Feature Engineering simple + Modelo base
 
-## Contexto
-En esta práctica trabajamos con el dataset del Titanic para aplicar un **proceso de Feature Engineering simple** y entrenar un **modelo base de clasificación**.  
+!!! abstract "Ficha rápida"
+    **Dataset:** Titanic (Kaggle) — versión tabular con variables demográficas y socioeconómicas.  
+    **Notebook:** [Abrir en Colab](https://colab.research.google.com/drive/1ut5NvjzklgNwS8wfOD07xslXUY7flhu4?usp=sharing#scrollTo=feature-engineering)  
+    **Rol:** Diseño de *features* y comparación de modelos base (DummyClassifier vs. LogisticRegression).
+
+## 🚀 Resumen ejecutivo
+- Se consolidó un pipeline reproducible que prepara datos, crea nuevas variables y entrena modelos comparables.
+- La Regresión Logística alcanzó un accuracy del 81.5 %, superando ampliamente al baseline de clase mayoritaria (61 %).
+- Se documentaron las transformaciones clave y se analizó la matriz de confusión para priorizar mejoras futuras.
+
+## 🎯 Objetivos
+- Practicar la creación de nuevas variables (*features*) a partir de los datos originales.
+- Construir un modelo base de clasificación con **Logistic Regression** y compararlo con un modelo trivial.
+- Evaluar métricas de rendimiento más allá de la accuracy, destacando precision, recall y matriz de confusión.
+
+## 🕒 Agenda de trabajo
+
+| Actividad | Propósito | Tiempo |
+|-----------|-----------|:------:|
+| Revisión del dataset y limpieza | Analizar valores faltantes y preparar columnas para ingeniería de características. | 20 min |
+| Creación de nuevas features | Generar variables derivadas (FamilySize, Title, IsAlone) y codificar categorías. | 30 min |
+| Entrenamiento del modelo base | Ajustar LogisticRegression con hiperparámetros controlados. | 25 min |
+| Evaluación de métricas | Comparar resultados con DummyClassifier y extraer aprendizajes. | 20 min |
+
+## 📚 Contexto
+En esta práctica trabajamos con el dataset del Titanic para aplicar un **proceso de Feature Engineering simple** y entrenar un **modelo base de clasificación**.
 Se busca entender cómo transformar variables, crear nuevas características y evaluar un modelo inicial.
 
-## Objetivos
-- Practicar la creación de nuevas variables (*features*) a partir de los datos originales.  
-- Construir un modelo base de clasificación (Logistic Regression).  
-- Comparar su desempeño con un modelo trivial (*DummyClassifier*).  
-- Evaluar métricas de rendimiento más allá de la accuracy.  
-## Actividades (con tiempos estimados)
-| Actividad                     | Tiempo |
-|--------------------------------|:------:|
-| Revisión del dataset y limpieza | 20 min |
-| Creación de nuevas features     | 30 min |
-| Entrenamiento del modelo base   | 25 min |
-| Evaluación de métricas          | 20 min |
-
+## 🔍 Insights destacados
+- El baseline con `DummyClassifier` se mantiene en 61 %, lo que establece un piso claro para medir mejoras.
+- Las variables creadas (`FamilySize`, `IsAlone`, `Title`) aportan señal útil y permiten que la Regresión Logística llegue al 81.5 % de accuracy.
+- La matriz de confusión revela 21 falsos negativos; priorizar ajustes que reduzcan ese error mejora el recall de la clase positiva.
 
 ## Desarrollo
-## 🔎 LogisticRegression
 
-### ❓ ¿Qué tipo de problema resuelve?
+### 🔎 LogisticRegression
+
+#### ❓ ¿Qué tipo de problema resuelve?
+
 Los problemas de **clasificación**, de manera más específica la **clasificación binaria**.
 
 ---
 
-### ⚙️ ¿Qué parámetros importantes tiene?
-- **penalty** → tipo de regularización.  
-- **solver** → algoritmo de optimización para estimar coeficientes.  
-- **max_iter** → número máximo de iteraciones del solver.  
+#### ⚙️ ¿Qué parámetros importantes tiene?
+
+- **penalty** → tipo de regularización.
+- **solver** → algoritmo de optimización para estimar coeficientes.
+- **max_iter** → número máximo de iteraciones del solver.
 
 ---
 

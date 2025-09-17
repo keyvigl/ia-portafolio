@@ -5,27 +5,42 @@ date: 2025-01-01
 
 # Tarea: Validación y Selección de Modelos - Fill in the Blanks
 
+!!! abstract "Ficha rápida"
+    **Dataset:** Student Dropout and Academic Success (UCI Machine Learning Repository).  
+    **Notebook:** [Abrir en Colab](https://colab.research.google.com/drive/1ut5NvjzklgNwS8wfOD07xslXUY7flhu4?usp=sharing#scrollTo=validacion-y-seleccion)  
+    **Rol:** Diseñar pipelines con scikit-learn, validar modelos y justificar la selección final.
 
+## 🚀 Resumen ejecutivo
+- Se configuró un pipeline que previene *data leakage* integrando escalado y estimadores dentro de `Pipeline` de scikit-learn.
+- Se evaluaron LogisticRegression, RidgeClassifier y RandomForest mediante validación cruzada estratificada.
+- Se sintetizaron los resultados destacando estabilidad entre pliegues y criterios para elegir el mejor modelo.
 
-## Contexto
-En esta tarea se trabaja con **técnicas de validación y selección de modelos** dentro del flujo de *Machine Learning*.  
-El objetivo es aplicar métodos como **train/test split, validación cruzada y selección de hiperparámetros** para evaluar de manera justa distintos algoritmos y escoger el mejor en función de métricas de desempeño.  
+## 🎯 Objetivos
+- Aprender a prevenir data leakage usando pipelines reproducibles.
+- Implementar validación cruzada (cross-validation) robusta.
+- Comparar múltiples modelos de forma sistemática y analizar su estabilidad.
+- Interpretar métricas de selección de modelos con foco en retención estudiantil.
+
+## 🕒 Agenda de trabajo
+
+| Actividad | Propósito | Tiempo |
+|-----------|-----------|:------:|
+| Repaso teórico de validación y data leakage | Alinear conceptos antes de codificar. | 30 min |
+| Implementación de *pipelines* con scikit-learn | Encadenar preprocesamiento y modelo en un solo flujo. | 45 min |
+| Validación cruzada con diferentes modelos | Medir estabilidad con `KFold` y comparar algoritmos. | 45 min |
+| Comparación de resultados y selección final | Resumir métricas y justificar la elección. | 30 min |
+| Redacción de reflexión y documentación final | Registrar hallazgos y próximos pasos. | 20 min |
+
+## 📚 Contexto
+En esta tarea se trabaja con **técnicas de validación y selección de modelos** dentro del flujo de *Machine Learning*.
+El objetivo es aplicar métodos como **train/test split, validación cruzada y selección de hiperparámetros** para evaluar de manera justa distintos algoritmos y escoger el mejor en función de métricas de desempeño.
 También se busca comprender cómo evitar el **sobreajuste (overfitting)** y garantizar que el modelo generalice correctamente a nuevos datos.
 
-## Objetivos
-- Aprender a prevenir data leakage usando pipelines
-- Implementar validación cruzada (cross-validation) robusta
-- Comparar múltiples modelos de forma sistemática
-- Interpretar métricas de estabilidad y selección de modelos
+## 🔍 Insights destacados
+- El dataset presenta un desbalance moderado entre clases, por lo que la métrica de accuracy se complementa con reports detallados.
+- Los pipelines permiten replicar experimentos sin filtrar información del conjunto de prueba.
+- La comparación de modelos resalta la importancia de revisar dispersión (desviación estándar) además del promedio de accuracy.
 
-## Actividades (con tiempos estimados)
-| Actividad                                      | Tiempo estimado |
-|------------------------------------------------|----------------:|
-| Repaso teórico de validación y data leakage    | 30 min |
-| Implementación de *pipelines* con scikit-learn | 45 min |
-| Validación cruzada con diferentes modelos      | 45 min |
-| Comparación de resultados y selección final    | 30 min |
-| Redacción de reflexión y documentación final   | 20 min |
 ## Desarrollo
 ### 🔧 Paso 1: Setup Inicial
 
@@ -47,7 +62,7 @@ Downloading ucimlrepo-0.0.7-py3-none-any.whl (8.0 kB)
 Installing collected packages: ucimlrepo
 Successfully installed ucimlrepo-0.0.7
 ```
------------------
+---
 ```python
 # Importar librerías que vamos a usar
 import pandas as pd
