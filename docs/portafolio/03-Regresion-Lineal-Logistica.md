@@ -3,8 +3,7 @@ title: "Tarea: Regresión Lineal y Logística - Fill in the Blanks"
 date: 2025-01-01
 ---
 
-# 📝 Tarea : Regresión Lineal y Logística - Fill in the Blanks
-
+# 📝 Tarea: Regresión Lineal y Logística - Fill in the Blanks
 
 ---
 

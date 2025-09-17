@@ -1,4 +1,3 @@
-
 ---
 title: "Práctica 2: Feature Engineering simple + Modelo base"
 date: 2025-01-01
@@ -10,32 +9,37 @@ date: 2025-01-01
 En esta práctica trabajamos con el dataset del Titanic para aplicar un **proceso de Feature Engineering simple** y entrenar un **modelo base de clasificación**.  
 Se busca entender cómo transformar variables, crear nuevas características y evaluar un modelo inicial.
 
+
 ## Objetivos
-- Practicar la creación de nuevas variables (*features*) a partir de los datos originales.  
-- Construir un modelo base de clasificación (Logistic Regression).  
-- Comparar su desempeño con un modelo trivial (*DummyClassifier*).  
-- Evaluar métricas de rendimiento más allá de la accuracy.  
+- Practicar la creación de nuevas variables (*features*) a partir de los datos originales.
+- Construir un modelo base de clasificación (Logistic Regression).
+- Comparar su desempeño con un modelo trivial (*DummyClassifier*).
+- Evaluar métricas de rendimiento más allá de la accuracy.
+
 ## Actividades (con tiempos estimados)
-| Actividad                     | Tiempo |
+
+| Actividad                      | Tiempo |
 |--------------------------------|:------:|
 | Revisión del dataset y limpieza | 20 min |
 | Creación de nuevas features     | 30 min |
 | Entrenamiento del modelo base   | 25 min |
 | Evaluación de métricas          | 20 min |
 
-
 ## Desarrollo
-## 🔎 LogisticRegression
 
-### ❓ ¿Qué tipo de problema resuelve?
+### 🔎 LogisticRegression
+
+#### ❓ ¿Qué tipo de problema resuelve?
+
 Los problemas de **clasificación**, de manera más específica la **clasificación binaria**.
 
 ---
 
-### ⚙️ ¿Qué parámetros importantes tiene?
-- **penalty** → tipo de regularización.  
-- **solver** → algoritmo de optimización para estimar coeficientes.  
-- **max_iter** → número máximo de iteraciones del solver.  
+#### ⚙️ ¿Qué parámetros importantes tiene?
+
+- **penalty** → tipo de regularización.
+- **solver** → algoritmo de optimización para estimar coeficientes.
+- **max_iter** → número máximo de iteraciones del solver.
 
 ---
 

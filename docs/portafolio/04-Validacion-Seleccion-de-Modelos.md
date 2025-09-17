@@ -20,12 +20,13 @@ También se busca comprender cómo evitar el **sobreajuste (overfitting)** y gar
 
 ## Actividades (con tiempos estimados)
 | Actividad                                      | Tiempo estimado |
-|------------------------------------------------|----------------:|
+|------------------------------------------------|:---------------:|
 | Repaso teórico de validación y data leakage    | 30 min |
 | Implementación de *pipelines* con scikit-learn | 45 min |
 | Validación cruzada con diferentes modelos      | 45 min |
 | Comparación de resultados y selección final    | 30 min |
 | Redacción de reflexión y documentación final   | 20 min |
+
 ## Desarrollo
 ### 🔧 Paso 1: Setup Inicial
 
@@ -47,7 +48,7 @@ Downloading ucimlrepo-0.0.7-py3-none-any.whl (8.0 kB)
 Installing collected packages: ucimlrepo
 Successfully installed ucimlrepo-0.0.7
 ```
------------------
+---
 ```python
 # Importar librerías que vamos a usar
 import pandas as pd
