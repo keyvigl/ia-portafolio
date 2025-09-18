@@ -5,7 +5,7 @@ date: 2025-01-01
 
 # Portafolio
 
-!!! info "Cómo navegar"
+!!! info "Cómo Navegar"
     Cada entrada documenta una práctica o proyecto del curso. Encontrarás objetivos, metodología, código de soporte y reflexiones.
 
 ## Entradas destacadas
