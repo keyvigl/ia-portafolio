@@ -3,21 +3,61 @@ title: "Índice del Portafolio"
 date: 2025-01-01
 ---
 
-# Portafolio
+# Portafolio del curso
 
-Este portafolio recopila las prácticas y tareas del curso, documentadas con el mismo formato para facilitar su lectura y evolución.
-Cada entrada incluye una **ficha rápida**, la agenda de trabajo y las reflexiones finales para que sea sencillo volver sobre los aprendizajes.
+> Bitácora visual de prácticas, experimentos y entregables de la cursada. Cada entrada combina ficha ejecutiva, agenda y desarrollo técnico para volver rápidamente sobre los aprendizajes.
 
-## 🧭 Cómo navegar
+## 🧭 Cómo usar este portafolio
 
-- Mantené la numeración `01-`, `02-`, … para conservar el orden cronológico en la barra lateral.
-- Partí de la [plantilla base](plantilla.md) para asegurar el mismo formato visual.
-- Dentro de cada página vas a encontrar: resumen, objetivos, agenda, desarrollo, evidencias y reflexión.
+1. Recorre la **tarjeta de cada práctica** para saber de qué trata, qué entregable incluye y cuál es su estado.
+2. Usa la tabla de línea de tiempo para comparar focos temáticos, avances y próximos pasos.
+3. Para documentar nuevas actividades, duplicá la plantilla y completá las secciones marcadas.
 
-!!! tip "Sugerencia"
-    Si vas a crear una nueva entrada, duplicá la última y actualizá los datos clave. Así preservás estilos, tablas y bloques preformateados.
+### Checklist para nuevas entradas
 
-## 🗂️ Línea de tiempo de las prácticas
+- [ ] Mantener la numeración del archivo (`01-`, `02-`, …) para preservar el orden en la barra lateral.
+- [ ] Actualizar la **ficha rápida** con dataset, notebook y rol.
+- [ ] Completar agenda, insights y evidencias con los mismos formatos.
+- [ ] Añadir las reflexiones finales y tareas pendientes.
+
+!!! tip "Atajo"
+    Desde la barra lateral, abrí la plantilla en una nueva pestaña para copiarla sin perder contexto.
+
+## 🗺️ Mapa de prácticas
+
+<div class="grid cards" markdown>
+
+-   :material-compass: **01 · EDA del Titanic**
+    ---
+    - **Foco:** Exploración del dataset y limpieza inicial.
+    - **Entregable:** Notebook en Colab con hallazgos prioritarios.
+    - **Estado:** ✅ Entregado.
+    [:material-open-in-new: Ver práctica](01-primera-entrada.md)
+
+-   :material-cog: **02 · Feature Engineering + Modelo base**
+    ---
+    - **Foco:** Creación de variables y comparación de modelos base.
+    - **Entregable:** Pipeline reproducible con métricas iniciales.
+    - **Estado:** ✅ Entregado.
+    [:material-open-in-new: Ver práctica](02-Feature-Engineering.md)
+
+-   :material-chart-line: **03 · Regresión Lineal y Logística**
+    ---
+    - **Foco:** Modelado supervisado para regresión y clasificación.
+    - **Entregable:** Reportes comparativos y conclusiones de desempeño.
+    - **Estado:** ✅ Entregado.
+    [:material-open-in-new: Ver práctica](03-Regresion-Lineal-Logistica.md)
+
+-   :material-graph-outline: **04 · Validación y Selección de Modelos**
+    ---
+    - **Foco:** Cross-validation, pipelines y evaluación de alternativas.
+    - **Entregable:** Tablero de métricas y recomendaciones finales.
+    - **Estado:** ✅ Entregado.
+    [:material-open-in-new: Ver práctica](04-Validacion-Seleccion-de-Modelos.md)
+
+</div>
+
+## 📅 Línea de tiempo
 
 | Nº | Tema y entregable | Puntos clave | Recursos | Estado |
 |:--:|-------------------|--------------|----------|:------:|
@@ -26,8 +66,11 @@ Cada entrada incluye una **ficha rápida**, la agenda de trabajo y las reflexion
 | 03 | **Regresión Lineal y Logística**<br>Actividad *fill in the blanks*. | Análisis de Boston Housing y clasificación de cáncer de mama. | [Entrada 03](03-Regresion-Lineal-Logistica.md) | ✅ |
 | 04 | **Validación y Selección de Modelos**<br>Retención estudiantil (dataset UCI). | Pipelines con scikit-learn, validación cruzada y comparación de modelos. | [Entrada 04](04-Validacion-Seleccion-de-Modelos.md) | ✅ |
 
-## 🚧 Próximas incorporaciones
+## 🚀 Próximas mejoras visuales
 
-- Documentar aprendizajes transversales entre prácticas (ej. cómo evolucionó la ingeniería de características).
-- Incluir gráficas representativas dentro de cada entrada para enriquecer la narrativa visual.
-- Preparar una sección de “Metas siguientes” con las habilidades que se quieren profundizar.
+- [ ] Documentar aprendizajes transversales entre prácticas (ej. evolución de la ingeniería de características).
+- [ ] Incorporar mini-galerías con gráficas representativas dentro de cada entrada.
+- [ ] Añadir una sección "Metas siguientes" para seguir profundizando habilidades.
+
+!!! info "¿Buscás la plantilla?"
+    Se encuentra al final del listado en la barra lateral: [plantilla.md](plantilla.md). Duplica el archivo, renómbralo siguiendo la numeración y completá cada bloque guiado.

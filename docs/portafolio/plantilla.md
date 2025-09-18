@@ -1,125 +1,89 @@
 ---
-title: "Plantilla de entrada de portafolio"
+title: "Plantilla para nuevas prácticas"
 date: 2025-01-01
 ---
 
-# Plantilla de entrada de portafolio
+# ✏️ Plantilla para documentar prácticas
 
-Usá esta plantilla como base para mantener un formato consistente en todo el portafolio.
+Completa cada sección para mantener el formato visual del portafolio. Duplica este archivo, renómbralo siguiendo la numeración (`05-nueva-practica.md`) y reemplaza los textos guía.
 
-!!! abstract "Ficha rápida"
-    **Dataset:** Nombre del dataset o fuente principal.  
-    **Notebook:** [Enlace a Colab o repositorio](https://...).  
-    **Rol:** Breve descripción del foco de la práctica (EDA, modelado, visualización, etc.).
+<div class="grid cards" markdown>
 
-## 🚀 Resumen ejecutivo
-- ¿Qué se hizo en esta práctica?
-- ¿Cuáles fueron los principales resultados?
-- ¿Qué decisión o aprendizaje clave surgió?
+-   :material-database: **Dataset / Fuente de datos**
+    ---
+    Describe el origen del dataset (Kaggle, UCI, propio, etc.).
+
+-   :material-notebook: **Notebook / Repositorio**
+    ---
+    Enlace a Colab, Jupyter o repositorio asociado.
+
+-   :material-account-badge: **Rol**
+    ---
+    ¿Qué hiciste? (EDA, modelado, presentación, etc.).
+
+-   :material-flag-checkered: **Estado**
+    ---
+    ✅ / 🚧 según corresponda.
+
+</div>
+
+## En una mirada
+
+- Resumen corto del entregable y principales logros.
+- Métrica o insight destacado que quieras resaltar.
+
+!!! tip "Ejemplo"
+    "Se construyó un modelo base con accuracy del 82 % y se documentó el pipeline para futuras iteraciones."
 
 ## 🎯 Objetivos
-- Objetivo específico y medible 1.
-- Objetivo específico y medible 2.
 
-## 🕒 Agenda de trabajo
+- Objetivo 1
+- Objetivo 2
+- Objetivo 3
+
+## 🗓️ Agenda express
 
 | Actividad | Propósito | Tiempo |
 |-----------|-----------|:------:|
-| Ejemplo de actividad | ¿Para qué se realiza? | 30 min |
-| ... | ... | ... |
-
-## 📚 Contexto
-Breve descripción del tema o actividad. Explicá el problema que se aborda y por qué es relevante.
+| Paso 1 | ¿Por qué se hace? | XX min |
+| Paso 2 | ¿Qué se busca lograr? | XX min |
+| Paso 3 | Resultado esperado | XX min |
 
 ## 🔍 Insights destacados
-- Insight 1.
-- Insight 2.
-- Insight 3.
 
-## Desarrollo
-Resumen de lo realizado, decisiones y resultados intermedios. Podés usar subsecciones, admoniciones o bloques de código.
+- Insight 1
+- Insight 2
+- Insight 3
 
-## Evidencias
-- Capturas, enlaces a notebooks/repos, resultados, gráficos.
-- Incluí recursos en `docs/assets/` cuando corresponda.
+## 🛠️ Desarrollo guiado
 
-## Reflexión
-- Qué aprendiste, qué mejorarías, próximos pasos.
+Describe el flujo general del trabajo. Puedes dividirlo en sub-secciones:
 
-## Referencias
-- Fuentes consultadas con enlaces relativos cuando corresponda
+### 1. Configuración / Setup
 
-
----
-
-## Guía de formato y ejemplos (MkDocs Material)
-
-Usá estos ejemplos para enriquecer tus entradas. Todos funcionan con la configuración del template.
-
-### Admoniciones
-
-!!! note "Nota"
-    Este es un bloque informativo.
-
-!!! tip "Sugerencia"
-    Considerá alternativas y justifica decisiones.
-
-!!! warning "Atención"
-    Riesgos, limitaciones o supuestos relevantes.
-
-### Detalles colapsables
-
-???+ info "Ver desarrollo paso a paso"
-    - Paso 1: preparar datos
-    - Paso 2: entrenar modelo
-    - Paso 3: evaluar métricas
-
-### Código con resaltado y líneas numeradas
-
-```python hl_lines="2 6" linenums="1"
-def train(
-    data_path: str,
-    epochs: int = 10,
-    learning_rate: float = 1e-3,
-) -> None:
-    print("Entrenando...")
-    # TODO: implementar
+```python
+# Código base o comandos ejecutados
 ```
 
-### Listas de tareas (checklist)
+### 2. Procesamiento / Análisis
 
-- [ ] Preparar datos
-- [x] Explorar dataset
-- [ ] Entrenar baseline
+```python
+# Fragmentos clave del análisis
+```
 
-### Tabla de actividades con tiempos
+### 3. Resultados
 
-| Actividad           | Tiempo | Resultado esperado               |
-|---------------------|:------:|----------------------------------|
-| Revisión bibliográfica |  45m  | Lista de fuentes priorizadas     |
-| Implementación      |  90m   | Script ejecutable/documentado    |
-| Evaluación          |  60m   | Métricas y análisis de errores   |
+- Resumen de métricas
+- Visualizaciones relevantes (usa `![caption](ruta)`)
 
-### Imágenes con glightbox y atributos
+## 🧭 Preguntas guía (opcional)
 
-Imagen directa (abre en lightbox):
+| Pregunta | Respuesta |
+|----------|-----------|
+| Ejemplo | Insight o reflexión |
 
-![Diagrama del flujo](../assets/placeholder.png){ width="420" }
+## ✅ Cierre y próximos pasos
 
-Click para ampliar (lightbox):
-
-[![Vista previa](../assets/placeholder.png){ width="280" }](../assets/placeholder.png)
-
-### Enlaces internos y relativos
-
-Consultá también: [Acerca de mí](../acerca.md) y [Recursos](../recursos.md).
-
-### Notas al pie y citas
-
-Texto con una afirmación que requiere aclaración[^nota].
-
-[^nota]: Esta es una nota al pie con detalles adicionales y referencias.
-
-### Emojis y énfasis
-
-Resultados destacados :rocket: :sparkles: y conceptos `clave`.
+- ¿Qué quedó pendiente?
+- ¿Qué mejorarás en la siguiente iteración?
+- Recursos o lecturas recomendadas.
