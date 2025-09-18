@@ -5,14 +5,40 @@ date: 2025-08-30
 
 # Acerca de mí
 
-<div class="grid" markdown>
+<div class="grid">
 
 <div markdown>
-
-![Perfil](./assets/profile3.jpg) 
+<img src="./assets/profile3.jpg" alt="Perfil" width="240" loading="lazy" style="border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.15);">
 </div>
 
 <div markdown>
+
+## Keyvi Alexander García Linares  
+
+Estudiante de intercambio peruano en la **Universidad Católica del Uruguay**, cursando **Ingeniería de Sistemas**.  
+Mi misión es combinar analítica de datos, inteligencia artificial y liderazgo colaborativo para impulsar soluciones tecnológicas con impacto humano.  
+
+📍 **Lima, Perú · Montevideo, Uruguay**  
+🎓 **Universidad César Vallejo · UCU**  
+🌐 **Español · Inglés (B2)**  
+
+</div>
+
+</div>
+
+
+## Keyvi Alexander García Linares  
+
+Estudiante de intercambio peruano en la **Universidad Católica del Uruguay**, cursando **Ingeniería de Sistemas**.  
+Mi misión es combinar analítica de datos, inteligencia artificial y liderazgo colaborativo para impulsar soluciones tecnológicas con impacto humano.  
+
+:material-map-marker: Lima, Perú · Montevideo, Uruguay  
+:material-school: Universidad César Vallejo · UCU  
+:material-translate: Español · Inglés (B2)
+
+</div>
+
+</div>
 
 ## Keyvi Alexander García Linares
 
