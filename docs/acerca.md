@@ -9,8 +9,7 @@ date: 2025-08-30
 
 <div markdown>
 
-![Perfil](assets/profile3.jpg){ width="240" loading="lazy" }
-
+![Perfil](assets/profile3.jpg)
 </div>
 
 <div markdown>
@@ -47,12 +46,7 @@ Estudiante de intercambio peruano en la **Universidad Católica del Uruguay**, c
 
 ## Experiencia académica destacada
 
-| Periodo | Experiencia | Enfoque |
-|---------|-------------|---------|
-| 2023 | Laboratorios introductorios a IA | Algoritmos de búsqueda, heurísticas y ética en IA. |
-| 2024 | Proyecto de analítica para gestión educativa | Predicción de riesgo académico con dashboards en Power BI. |
-| 2024 | Talleres de seguridad informática | Buenas prácticas, hardening y uso responsable de datos. |
-| 2025 | Intercambio en UCU | Integración multicultural y proyectos colaborativos con estudiantes internacionales. |
+
 
 ## Aprendizajes recientes
 
