@@ -5,23 +5,87 @@ date: 2025-08-30
 
 # Acerca de mí
 
-![Perfil](assets/profile3.jpg)
+<div class="grid" markdown>
 
+<div markdown>
 
+![Perfil](assets/profile3.jpg){ width="240" loading="lazy" }
 
-Soy **Keyvi Alexander García Linares**, estudiante de intercambio proveniente del Perú, con 20 años de edad.  
-Curso la carrera de **Ingeniería de Sistemas en la Universidad César Vallejo**, y actualmente me encuentro en un programa de intercambio académico en la **Universidad Católica del Uruguay**.  
+</div>
 
-Me apasiona la tecnología y su impacto en la transformación digital de las organizaciones. Dentro de mi carrera, me interesa el desarrollo de software, la inteligencia artificial, la gestión de bases de datos y la analítica de datos aplicados a la solución de problemas reales.  
-Busco crecer como profesional con una visión internacional, integrando mis conocimientos en programación, ciencia de datos y gestión tecnológica para aportar al desarrollo de proyectos innovadores tanto en el ámbito académico como en el profesional.  
+<div markdown>
 
-## Habilidades
+## Keyvi Alexander García Linares
 
-- **Lenguajes de programación**: Python, Java, C#, C++, JavaScript  
-- **Bases de datos**: SQL (consultas, modelado y gestión de datos)  
-- **Herramientas**: Power BI, Excel, SPSS, GitHub  
-- **Áreas de interés**: Inteligencia Artificial, Desarrollo de Software, Seguridad Informática, Analítica de Datos, Transformación Digital  
+Estudiante de intercambio peruano en la **Universidad Católica del Uruguay**, cursando **Ingeniería de Sistemas**. Mi misión es combinar analítica de datos, inteligencia artificial y liderazgo colaborativo para impulsar soluciones tecnológicas con impacto humano.
+
+:material-map-marker: Lima, Perú · Montevideo, Uruguay  
+:material-school: Universidad César Vallejo · UCU  
+:material-translate: Español · Inglés (B2)
+
+</div>
+
+</div>
+
+!!! quote "Manifiesto personal"
+    "Aprender, construir y compartir. Creo en la tecnología como herramienta para generar cambios tangibles en las comunidades."
+
+## Habilidades distintivas
+
+<div class="grid cards" markdown>
+
+-   :material-binary: **Data Science & IA**  
+    Limpieza de datos, *feature engineering*, modelos de clasificación y evaluación con scikit-learn.
+-   :material-vector-polyline: **Desarrollo de software**  
+    Aplicaciones en Python, Java, C#, C++ y JavaScript con control de versiones en Git.
+-   :material-database: **Gestión de datos**  
+    Modelado relacional, consultas complejas y optimización en SQL Server y PostgreSQL.
+-   :material-account-group: **Trabajo colaborativo**  
+    Experiencia liderando equipos estudiantiles, mentorías y presentaciones técnicas claras.
+
+</div>
+
+## Experiencia académica destacada
+
+| Periodo | Experiencia | Enfoque |
+|---------|-------------|---------|
+| 2023 | Laboratorios introductorios a IA | Algoritmos de búsqueda, heurísticas y ética en IA. |
+| 2024 | Proyecto de analítica para gestión educativa | Predicción de riesgo académico con dashboards en Power BI. |
+| 2024 | Talleres de seguridad informática | Buenas prácticas, hardening y uso responsable de datos. |
+| 2025 | Intercambio en UCU | Integración multicultural y proyectos colaborativos con estudiantes internacionales. |
+
+## Aprendizajes recientes
+
+=== "IA & Datos"
+
+- Implementación de pipelines reproducibles para validación cruzada.
+- Afinamiento de hiperparámetros con GridSearchCV.
+- Diseño de métricas personalizadas para evaluar balance entre precisión y recall.
+
+=== "Desarrollo"
+
+- Arquitectura de APIs ligeras con FastAPI.
+- Integración continua en GitHub Actions para pruebas automáticas.
+- Contenerización básica con Docker para despliegues universitarios.
+
+=== "Human Skills"
+
+- Comunicación intercultural en equipos distribuidos.
+- Facilitación de talleres introductorios para estudiantes de primer ciclo.
+- Gestión del tiempo combinando cursos, trabajo freelance y voluntariado.
+
+## Valores que me guían
+
+!!! success
+    - **Innovación responsable:** equilibrar eficiencia técnica con impacto social.
+    - **Curiosidad constante:** mantener una mentalidad de aprendizaje continuo.
+    - **Colaboración:** crear espacios donde cada integrante aporte al máximo.
 
 ## Contacto
 
 - 📧 Email institucional: **keyvi.garcia@correo.ucu.edu.pe**
+- 💼 LinkedIn: [linkedin.com/in/keyvigarcia](https://www.linkedin.com/in/keyvigarcia/){ target="_blank" }
+- :material-github: GitHub: [github.com/keyvigarcia](https://github.com/keyvigarcia){ target="_blank" }
+
+¿Quieres conversar sobre proyectos, pasantías o iniciativas sociales con IA? ¡Escríbeme!
+
