@@ -9,7 +9,7 @@ date: 2025-08-30
 
 <div markdown>
 
-![Perfil](assets/profile3.jpg)
+![Perfil](./assets/profile3.jpg) 
 </div>
 
 <div markdown>
