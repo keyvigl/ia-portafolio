@@ -1,10 +1,10 @@
-# Plantilla de Portafolio
+# Portfolio Template
 
 Este repositorio es un **template** para documentar el **portafolio** del curso usando **MkDocs + Material** con despliegue automático a GitHub Pages.
 
 ## Cómo usar
 1. Escribe únicamente en `docs/`.
-2. Crea entradas en `docs/portafolio/` siguiendo `plantilla.md`.
+2. Crea entradas en `docs/portfolio/` siguiendo `plantilla.md`.
 3. Mantén el **frontmatter** en cada `.md`:
    ```yaml
    ---
