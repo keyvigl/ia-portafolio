@@ -27,19 +27,31 @@ Completa cada sección para mantener el formato visual del portafolio. Duplica e
 
 </div>
 
-## En una mirada
+## 📌 Panel ejecutivo
 
-- Resumen corto del entregable y principales logros.
-- Métrica o insight destacado que quieras resaltar.
+<div class="grid cards" markdown>
+
+-   :material-eye-outline: **En una mirada**
+    ---
+    - Resumen corto del entregable y principales logros.
+    - Métrica o insight destacado que quieras resaltar.
+
+-   :material-bullseye-arrow: **Objetivos**
+    ---
+    - Objetivo 1
+    - Objetivo 2
+    - Objetivo 3
+
+-   :material-lightbulb-on: **Insights destacados**
+    ---
+    - Insight 1
+    - Insight 2
+    - Insight 3
+
+</div>
 
 !!! tip "Ejemplo"
     "Se construyó un modelo base con accuracy del 82 % y se documentó el pipeline para futuras iteraciones."
-
-## 🎯 Objetivos
-
-- Objetivo 1
-- Objetivo 2
-- Objetivo 3
 
 ## 🗓️ Agenda express
 
@@ -48,12 +60,6 @@ Completa cada sección para mantener el formato visual del portafolio. Duplica e
 | Paso 1 | ¿Por qué se hace? | XX min |
 | Paso 2 | ¿Qué se busca lograr? | XX min |
 | Paso 3 | Resultado esperado | XX min |
-
-## 🔍 Insights destacados
-
-- Insight 1
-- Insight 2
-- Insight 3
 
 ## 🛠️ Desarrollo guiado
 

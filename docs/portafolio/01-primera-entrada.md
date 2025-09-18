@@ -25,21 +25,33 @@ date: 2025-01-01
 
 </div>
 
-## En una mirada
+## 📌 Panel ejecutivo
 
-- Se automatizó la descarga del dataset mediante Kaggle API y se organizó la estructura de carpetas en Drive.
-- El EDA permitió identificar distribución de variables, valores faltantes críticos y primeras hipótesis de supervivencia.
-- Se documentaron hallazgos en tablas interpretables para facilitar iteraciones futuras.
+<div class="grid cards" markdown>
+
+-   :material-eye-outline: **En una mirada**
+    ---
+    - Automatización de descarga vía Kaggle API y organización de carpetas en Drive.
+    - EDA para detectar distribuciones, valores faltantes críticos e hipótesis de supervivencia.
+    - Registro de hallazgos en tablas interpretables para acelerar iteraciones.
+
+-   :material-bullseye-arrow: **Objetivos**
+    ---
+    - Conocer la estructura del dataset y sus principales variables.
+    - Practicar **EDA** con Pandas, Matplotlib y Seaborn.
+    - Identificar factores relevantes de supervivencia y documentarlos claramente.
+    - Detectar problemas de calidad de datos antes del modelado.
+
+-   :material-lightbulb-on: **Insights destacados**
+    ---
+    - Mayor supervivencia en mujeres, niños y pasajeros de primera clase.
+    - Columnas `Age`, `Cabin` y `Embarked` requieren estrategias de imputación específicas.
+    - Variables socioeconómicas (`Pclass`, `Fare`) aportan señal para features derivadas.
+
+</div>
 
 !!! success "Insight clave"
     La combinación **sexo + clase** es el indicador más fuerte de supervivencia; se usará como punto de partida para futuros modelos.
-
-## 🎯 Objetivos
-
-- Conocer la estructura del dataset y sus principales variables.
-- Practicar **EDA (Exploratory Data Analysis)** con Pandas, Matplotlib y Seaborn.
-- Identificar factores relevantes para la supervivencia y documentarlos claramente.
-- Detectar problemas de calidad de datos (faltantes, outliers, correlaciones) de cara a futuros modelos.
 
 ## 🗓️ Agenda express
 
@@ -54,12 +66,6 @@ date: 2025-01-01
 ## 🧱 Contexto rápido
 
 Exploramos el dataset **Titanic: Machine Learning from Disaster** de Kaggle. Se trata de un problema de **clasificación binaria** que busca predecir si un pasajero sobrevivió (`Survived = 1`) o no (`Survived = 0`). Es un clásico introductorio porque combina variables demográficas, socioeconómicas y familiares.
-
-## 🔍 Insights destacados
-
-- Mayor probabilidad de supervivencia en mujeres, niños y pasajeros de primera clase.
-- Columnas `Age`, `Cabin` y `Embarked` requieren estrategias de imputación específicas antes del modelado.
-- Variables socioeconómicas (`Pclass`, `Fare`) muestran correlaciones útiles para construir características derivadas.
 
 ## 🛠️ Desarrollo paso a paso
 

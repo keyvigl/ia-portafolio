@@ -25,20 +25,32 @@ date: 2025-01-01
 
 </div>
 
-## En una mirada
+## 📌 Panel ejecutivo
 
-- Se construyeron pipelines independientes para regresión y clasificación reutilizando utilidades comunes.
-- Se recopilaron métricas clave (MAE, RMSE, R², accuracy, precision, recall) para comparar desempeño.
-- Se documentó la interpretación de salidas y se respondieron reflexiones críticas sobre cada enfoque.
+<div class="grid cards" markdown>
+
+-   :material-eye-outline: **En una mirada**
+    ---
+    - Pipelines separados para regresión y clasificación reutilizando utilidades comunes.
+    - Métricas clave (MAE, RMSE, R², accuracy, precision, recall) para contrastar desempeño.
+    - Reflexiones críticas sobre interpretación y alcances de cada enfoque.
+
+-   :material-bullseye-arrow: **Objetivos**
+    ---
+    - Implementar un modelo de regresión lineal para predecir precios de casas y evaluar errores.
+    - Implementar un modelo de regresión logística para clasificar diagnósticos médicos.
+    - Comparar ambos enfoques resaltando diferencias, alcances y limitaciones.
+
+-   :material-lightbulb-on: **Insights destacados**
+    ---
+    - Métricas de regresión cuantifican error monetario promedio y porcentual.
+    - Clasificación médica requiere vigilar precisión y recall para evitar falsos negativos.
+    - La naturaleza de la variable objetivo define cuándo usar modelos lineales o logísticos.
+
+</div>
 
 !!! info "Dato útil"
     La distinción entre variable objetivo **continua** vs **categórica** guió la elección de algoritmo en cada sección.
-
-## 🎯 Objetivos
-
-- Implementar un modelo de regresión lineal para predecir precios de casas y evaluar su desempeño.
-- Implementar un modelo de regresión logística para clasificar diagnósticos médicos y revisar métricas.
-- Comparar ambos enfoques destacando diferencias, alcances y limitaciones.
 
 ## 🗓️ Agenda express
 
@@ -48,12 +60,6 @@ date: 2025-01-01
 | Entrenar y evaluar Regresión Lineal | Medir errores (MAE, RMSE) y R². | 40 min |
 | Entrenar y evaluar Regresión Logística | Analizar clasificación de cáncer de mama. | 40 min |
 | Reflexiones finales | Responder preguntas conceptuales. | 20 min |
-
-## 🔍 Insights destacados
-
-- Las métricas de regresión cuantifican el error monetario promedio y porcentual de las predicciones inmobiliarias.
-- La clasificación médica requiere monitorear precisión y recall para mitigar falsos negativos.
-- Se reforzó cuándo usar modelos lineales vs. logísticos según la naturaleza de la variable objetivo.
 
 ## 🧠 Desarrollo guiado
 

@@ -25,20 +25,32 @@ date: 2025-01-01
 
 </div>
 
-## En una mirada
+## 📌 Panel ejecutivo
 
-- Se consolidó un pipeline reproducible que prepara datos, crea nuevas variables y entrena modelos comparables.
-- La Regresión Logística alcanzó un accuracy del **81.5 %**, superando ampliamente al baseline de clase mayoritaria (61 %).
-- La matriz de confusión permitió priorizar mejoras enfocadas en reducir falsos negativos.
+<div class="grid cards" markdown>
+
+-   :material-eye-outline: **En una mirada**
+    ---
+    - Pipeline reproducible con limpieza, feature engineering y entrenamiento comparable.
+    - Regresión Logística con **81.5 %** de accuracy frente al baseline de clase mayoritaria (61 %).
+    - Matriz de confusión como brújula para priorizar reducción de falsos negativos.
+
+-   :material-bullseye-arrow: **Objetivos**
+    ---
+    - Practicar la creación de nuevas variables (*features*) a partir de datos originales.
+    - Construir un modelo base con **Logistic Regression** y compararlo con un modelo trivial.
+    - Evaluar métricas más allá de la accuracy: precision, recall, F1 y matriz de confusión.
+
+-   :material-lightbulb-on: **Insights destacados**
+    ---
+    - Baseline con `DummyClassifier` fija el piso en **61 %**.
+    - Features creadas (`FamilySize`, `IsAlone`, `Title`) elevan el desempeño al 81.5 %.
+    - 21 falsos negativos como foco prioritario para siguientes iteraciones.
+
+</div>
 
 !!! tip "Métrica a seguir"
     En futuras iteraciones, optimizar **recall** para disminuir falsos negativos en la clase positiva (sobrevivientes).
-
-## 🎯 Objetivos
-
-- Practicar la creación de nuevas variables (*features*) a partir de los datos originales.
-- Construir un modelo base de clasificación con **Logistic Regression** y compararlo con un modelo trivial.
-- Evaluar métricas de rendimiento más allá de la accuracy (precision, recall, F1, matriz de confusión).
 
 ## 🗓️ Agenda express
 
@@ -48,12 +60,6 @@ date: 2025-01-01
 | Creación de nuevas features | Generar `FamilySize`, `IsAlone`, `Title` y codificar categorías. | 30 min |
 | Entrenamiento del modelo base | Ajustar LogisticRegression con hiperparámetros controlados. | 25 min |
 | Evaluación de métricas | Comparar resultados con DummyClassifier y extraer aprendizajes. | 20 min |
-
-## 🔍 Insights destacados
-
-- El baseline con `DummyClassifier` fija el piso en **61 %** de accuracy.
-- Las variables creadas (`FamilySize`, `IsAlone`, `Title`) aportan señal y elevan el desempeño al 81.5 %.
-- La matriz de confusión revela **21 falsos negativos** → foco para siguientes iteraciones.
 
 ## 🛠️ Desarrollo guiado
 

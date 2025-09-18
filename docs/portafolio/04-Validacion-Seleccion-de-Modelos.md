@@ -25,21 +25,33 @@ date: 2025-01-01
 
 </div>
 
-## En una mirada
+## 📌 Panel ejecutivo
 
-- Se configuró un pipeline que previene *data leakage* integrando escalado y estimadores dentro de `Pipeline` de scikit-learn.
-- Se evaluaron LogisticRegression, RidgeClassifier y RandomForest mediante validación cruzada estratificada.
-- Se sintetizaron resultados destacando estabilidad entre pliegues y criterios para elegir el mejor modelo.
+<div class="grid cards" markdown>
+
+-   :material-eye-outline: **En una mirada**
+    ---
+    - Pipeline con escalado y estimadores en `Pipeline` para evitar *data leakage*.
+    - Validación cruzada estratificada sobre LogisticRegression, RidgeClassifier y RandomForest.
+    - Síntesis de resultados destacando estabilidad y criterios de selección final.
+
+-   :material-bullseye-arrow: **Objetivos**
+    ---
+    - Prevenir *data leakage* con pipelines reproducibles.
+    - Implementar validación cruzada robusta.
+    - Comparar modelos de forma sistemática y analizar estabilidad entre pliegues.
+    - Interpretar métricas de selección enfocadas en retención estudiantil.
+
+-   :material-lightbulb-on: **Insights destacados**
+    ---
+    - Escalado dentro del pipeline evita fugas hacia el conjunto de prueba.
+    - LogisticRegression mostró menor varianza que RandomForest en los pliegues.
+    - Se priorizó interpretabilidad para comunicar decisiones académicas.
+
+</div>
 
 !!! warning "Atención"
     El dataset presenta desbalance moderado; se complementó accuracy con reportes detallados y matriz de confusión.
-
-## 🎯 Objetivos
-
-- Aprender a prevenir data leakage usando pipelines reproducibles.
-- Implementar validación cruzada robusta.
-- Comparar múltiples modelos de forma sistemática y analizar su estabilidad.
-- Interpretar métricas de selección de modelos con foco en retención estudiantil.
 
 ## 🗓️ Agenda express
 
@@ -50,12 +62,6 @@ date: 2025-01-01
 | Validación cruzada con diferentes modelos | Medir estabilidad con `KFold` estratificado. | 45 min |
 | Comparación de resultados y selección final | Resumir métricas y justificar la elección. | 30 min |
 | Documentación final | Registrar hallazgos y próximos pasos. | 20 min |
-
-## 🔍 Insights destacados
-
-- Incluir escalado dentro del pipeline evita fugas de información hacia el conjunto de prueba.
-- La validación cruzada estratificada mostró menor varianza en LogisticRegression frente a RandomForest.
-- El análisis cualitativo favoreció modelos interpretables para comunicar decisiones académicas.
 
 ## 🧠 Desarrollo guiado
 
