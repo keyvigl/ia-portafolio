@@ -1,16 +1,46 @@
 site_name: "Portfolio"
+
+
 theme:
   name: material
   language: es
   features:
+    - navigation.top
     - navigation.sections
     - navigation.indexes
+    - toc.integrate
+    - content.code.copy
+    - content.tabs.link
+    - header.autohide
+    - search.suggest
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: pink
+      toggle:
+        icon: material/weather-night
+        name: Modo oscuro
+    - scheme: slate
+      primary: indigo
+      accent: pink
+      toggle:
+        icon: material/weather-sunny
+        name: Modo claro
+  font:
+    text: Roboto
+    code: Fira Code
+
 plugins:
   - search
   - awesome-pages
   - git-revision-date-localized:
+      type: date
+      locale: es
+      timezone: America/Montevideo
       fallback_to_build_date: true
-  - glightbox
+  - glightbox  # para lightbox en imágenes
+
 markdown_extensions:
   - admonition
   - attr_list
@@ -21,8 +51,24 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - pymdownx.tasklist:
-      custom_checkbox: true
+
+# Opcional: define navegación manual si quieres controlar el orden/etiquetas
+# nav:
+#   - Inicio: index.md
+#   - Acerca de mí: acerca.md
+#   - Portfolio:
+#       - Índice: portfolio/index.md
+#       - Práctica 01: portfolio/01-primera-entrada.md
+#       - Feature Engineering: portfolio/02-Feature-Engineering.md
+#       - Regresión Lineal y Logística: portfolio/02-Regresion-Lineal-Logistica.md
+#       - Validación y Selección de Modelos: portfolio/03-Validacion-Seleccion-deModelos.md
+#   - Recursos: recursos.md
