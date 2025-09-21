@@ -1,95 +1,94 @@
 ---
-title: "Portafolio — Inicio"
+title: "🌐 Portafolio — Inicio"
 date: 2025-01-01
 ---
 
-# Portafolio — Inicio
+# 🌟 Portafolio — Inicio
 
-<div class="hero" markdown>
+<div align="center">
 
-## ¡Hola! Soy Keyvi Alexander García Linares
+## 👋 ¡Hola! Soy **Keyvi Alexander García Linares**  
+🎓 Estudiante de **Ingeniería de Sistemas** apasionado por **Inteligencia Artificial**, **Analítica de Datos** y **Transformación Digital**.
 
-Estudiante de Ingeniería de Sistemas enfocado en **inteligencia artificial**, **analítica de datos** y **transformación digital**. Este espacio documenta mi viaje académico, los proyectos que construyo y los aprendizajes que me entusiasman.
+📌 Este espacio documenta mi **viaje académico**, los **proyectos que construyo** y los **aprendizajes que me entusiasman**.
 
-[:material-rocket-launch: Explorar el portafolio](portfolio/index.md){ .md-button .md-button--primary } [:material-email-fast: Contáctame](acerca.md#contacto){ .md-button }
-
-</div>
-
-## Qué encontrarás aquí
-
-<div class="grid cards" markdown>
-
--   :material-brain: **Aprendizaje supervisado y no supervisado**  
-    Modelos, experimentos y reflexiones paso a paso sobre regresión, clasificación y validación de modelos.
--   :material-lightbulb-on-10: **Casos de uso reales**  
-    Aplicaciones que conectan IA con problemáticas del mundo real: educación, negocios y optimización.
--   :material-compass: **Hoja de ruta profesional**  
-    Objetivos, próximos desafíos y las competencias que estoy cultivando para convertirme en un profesional integral.
--   :material-progress-check: **Evidencias y métricas**  
-    Resultados cuantitativos, notebooks y tableros que respaldan cada iteración del proceso de aprendizaje.
+[🚀 Explorar el Portafolio](portfolio/index.md) | [📩 Contáctame](acerca.md#contacto)
 
 </div>
 
-## Destellos recientes
+---
 
-!!! success "Hitos destacados"
-    - :material-trophy: **Top 5** en un reto interno de análisis de datos con Python, trabajando con pipelines reproducibles.
-    - :material-chart-box: Construí un tablero analítico que monitorea el rendimiento académico usando `Power BI` + `Python`.
-    - :material-lifebuoy: Mentor voluntario en talleres introductorios de IA ética para estudiantes de primer año.
+## 📌 Qué encontrarás aquí
 
-<div class="grid" markdown>
+| 📂 Categoría | 📖 Contenido |
+|--------------|-------------|
+| 🧠 **Aprendizaje supervisado y no supervisado** | Modelos, experimentos y reflexiones sobre regresión, clasificación y validación. |
+| 💡 **Casos de uso reales** | Aplicaciones que conectan IA con educación, negocios y optimización. |
+| 🧭 **Hoja de ruta profesional** | Objetivos, próximos desafíos y competencias clave para un perfil integral. |
+| 📊 **Evidencias y métricas** | Notebooks, dashboards y resultados cuantitativos. |
 
-<div markdown>
+---
 
-### Trayectoria en IA
+## 🏆 Destellos recientes
 
-- 2023 — Introducción a la IA y fundamentos de programación en Python.
-- 2024 — Modelado predictivo con énfasis en **regresión logística** y técnicas de **feature engineering**.
-- 2025 — Profundización en selección de modelos, validación y despliegue ligero de experimentos.
+- 🥇 **Top 5** en reto de análisis de datos con *pipelines* reproducibles en Python.  
+- 📊 Creación de un tablero analítico en **Power BI + Python** para rendimiento académico.  
+- 🤝 Mentor voluntario en talleres de **IA ética** para estudiantes de primer año.  
 
-</div>
+---
 
-<div markdown>
+## 📈 Trayectoria y Herramientas
 
-### Herramientas preferidas
+<div style="display: flex; gap: 2rem; flex-wrap: wrap;">
 
-- :material-language-python: Python (pandas, scikit-learn, seaborn)
-- :material-database: SQL Server & PostgreSQL
-- :material-chart-areaspline: Power BI, Looker Studio
-- :material-github: Git & GitHub Actions
-- :material-shield-sun: Buenas prácticas de ética y gobierno de datos
+<div style="flex:1; min-width: 250px;">
 
-</div>
-
-</div>
-
-## Últimas entradas
-
-<div class="grid cards" markdown>
-
--   [:material-notebook-edit: Validación y selección de modelos](portfolio/03-Validacion-Seleccion-deModelos.md)  
-    Evaluación comparativa, *hyperparameter tuning* y reflexiones finales de la práctica 4.
--   [:material-cog: Feature Engineering + Modelo base](portfolio/02-Feature-Engineering.md)  
-    Procesamiento, normalización y baseline con métricas clave.
--   [:material-chart-line: Regresión lineal y logística](portfolio/02-Regresion-Lineal-Logistica.md)  
-    Experimentación guiada con regresores lineales y logística multinomial.
+### 📅 Mi camino en IA
+- **2023** → Fundamentos de IA y programación en Python.  
+- **2024** → Modelado predictivo, **regresión logística** y **feature engineering**.  
+- **2025** → Selección de modelos, validación y despliegue ligero de experimentos.  
 
 </div>
 
-## Próximos pasos
+<div style="flex:1; min-width: 250px;">
 
-!!! tip
-    Estoy explorando nuevas rutas para integrar **modelos generativos** y flujos MLOps ligeros. Próximamente documentaré:
+### 🛠️ Herramientas favoritas
+- 🐍 Python (pandas, scikit-learn, seaborn)  
+- 🗄️ SQL Server & PostgreSQL  
+- 📊 Power BI · Looker Studio  
+- 💻 Git & GitHub Actions  
+- 🛡️ Ética y gobierno de datos  
 
-    1. Diseño de *pipelines* automatizados en GitHub Actions.
-    2. Experimentos con agentes conversacionales usando APIs de lenguaje natural.
-    3. Un laboratorio de *prompt engineering* con métricas de evaluación cualitativa.
+</div>
 
-## Conectemos
+</div>
+
+---
+
+## 📝 Últimas entradas del portafolio
+
+| 🔗 Proyecto | 📌 Descripción |
+|-------------|----------------|
+| [📓 Validación y selección de modelos](portfolio/03-Validacion-Seleccion-deModelos.md) | Evaluación comparativa, *hyperparameter tuning* y reflexiones finales. |
+| [⚙️ Feature Engineering + Modelo base](portfolio/02-Feature-Engineering.md) | Procesamiento, normalización y baseline con métricas clave. |
+| [📈 Regresión lineal y logística](portfolio/02-Regresion-Lineal-Logistica.md) | Experimentación con regresores lineales y logística multinomial. |
+
+---
+
+## 🚀 Próximos pasos
+
+Estoy explorando **modelos generativos** y flujos ligeros de **MLOps**. Documentaré pronto:
+
+1. Diseño de *pipelines* automatizados con **GitHub Actions**.  
+2. Experimentos con **agentes conversacionales** (NLP APIs).  
+3. Un laboratorio de **prompt engineering** con métricas cualitativas.  
+
+---
+
+## 🤝 Conectemos
 
 > _"La tecnología tiene sentido cuando mejora la vida de las personas."_
->
-> Si compartimos esta visión, conversemos sobre proyectos colaborativos, investigación o iniciativas sociales basadas en IA.
 
-[:material-linkedin: LinkedIn](https://www.linkedin.com/in/keyvigarcia/){ target="_blank" } · [:material-email: keyvi.garcia@correo.ucu.edu.pe](mailto:keyvi.garcia@correo.ucu.edu.pe)
+📬 Escríbeme si compartes esta visión:  
 
+[🌐 LinkedIn](https://www.linkedin.com/in/keyvigarcia/) · [📧 Correo](mailto:keyvi.garcia@correo.ucu.edu.pe)  
