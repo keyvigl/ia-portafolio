@@ -18,7 +18,7 @@ Este repositorio es un **template** para documentar el **portafolio** del curso 
 ## Ejecutar localmente
 ```bash
 pip install -r requirements.txt
-mkdocs serve
+mkdocs servem
 ```
 
 ## Despliegue
