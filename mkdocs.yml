@@ -12,9 +12,9 @@ theme:
     - toc.integrate
     - content.code.copy
     - content.tabs.link
-    - header.autohide
     - search.suggest
     - search.highlight
+    - header.autohide
   palette:
     - scheme: default
       primary: indigo
@@ -44,6 +44,7 @@ plugins:
 
 markdown_extensions:
   - admonition
+  - md_in_html
   - attr_list
   - footnotes
   - tables
