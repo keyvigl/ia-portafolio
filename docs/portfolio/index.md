@@ -100,7 +100,7 @@ Entrenamiento, curvas de pérdida, *callbacks* y evaluación final de modelos.
 
 **Trabajos extra:**  
 - :material-plus: *Regularización avanzada: L1/L2, Dropout y Batch Normalization*  
-  [:octicons-file-24: Ver artículo](08x-experimentacion-extra.md){ .md-button }  
+  [:octicons-file-24: Ver artículo](08x-experimentacions-extra.md){ .md-button }  
 
 - :material-plus: *Experimentación de arquitecturas MLP (profundidad y ancho)*  
   [:octicons-file-24: Ver artículo](08b-deep-learning-extra.md){ .md-button }  
