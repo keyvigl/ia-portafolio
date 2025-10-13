@@ -1,0 +1,40 @@
+h1, h2, h3 {
+  animation: fadeIn 1.2s ease;
+}
+.md-button {
+  transition: 0.3s ease;
+}
+.md-button:hover {
+  transform: scale(1.05);
+  background: var(--md-primary-fg-color);
+  color: white;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* Transiciones suaves */
+.md-typeset h1, .md-typeset h2, .md-typeset h3 {
+  animation: fadein 0.8s ease;
+}
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Botones más atractivos */
+.md-button {
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+.md-button:hover {
+  background: var(--md-accent-fg-color);
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Fondo degradado suave */
+body {
+  background: linear-gradient(180deg, #f8f9fa, #ffffff);
+}

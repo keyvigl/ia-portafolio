@@ -6,35 +6,37 @@ theme:
   name: material
   language: es
   features:
-    - navigation.top
+    - navigation.instant
+    - navigation.tabs
     - navigation.sections
-    - navigation.indexes
-    - toc.integrate
+    - header.autohide
     - content.code.copy
     - content.tabs.link
-    - search.suggest
     - search.highlight
-    - header.autohide
+    - search.suggest
+    - toc.follow
   palette:
     - scheme: default
       primary: indigo
-      accent: pink
+      accent: cyan
       toggle:
         icon: material/weather-night
-        name: Modo oscuro
+        name: Dark mode
     - scheme: slate
       primary: indigo
-      accent: pink
+      accent: lime
       toggle:
         icon: material/weather-sunny
-        name: Modo claro
+        name: Light mode
   font:
-    text: Roboto
-    code: Fira Code
+    text: 'Inter'
+    code: 'JetBrains Mono'
 
 plugins:
   - search
   - awesome-pages
+
+
   - git-revision-date-localized:
       type: date
       locale: es
@@ -74,3 +76,5 @@ markdown_extensions:
 #       - Regresión Lineal y Logística: portfolio/02-Regresion-Lineal-Logistica.md
 #       - Validación y Selección de Modelos: portfolio/03-Validacion-Seleccion-deModelos.md
 #   - Recursos: recursos.md
+extra_css:
+  - assets/custom.css

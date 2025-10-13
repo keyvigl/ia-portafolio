@@ -1,0 +1,113 @@
+/* === ESTILO OSCURO PERSONALIZADO === */
+
+:root {
+  --md-primary-fg-color: #4ed9b5;
+  --md-accent-fg-color: #4ed9b5;
+}
+
+body,
+.md-main,
+.md-content,
+.md-typeset {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* TITULOS */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4 {
+  color: #4ed9b5 !important;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* LINKS Y BOTONES */
+a,
+.md-button {
+  color: #4ed9b5 !important;
+  font-weight: 600;
+}
+
+a:hover,
+.md-button:hover {
+  color: #000 !important;
+  background-color: #4ed9b5 !important;
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* ENCABEZADO Y MENÚ */
+.md-header,
+.md-tabs {
+  background-color: #000000 !important;
+  border-bottom: 1px solid #4ed9b5;
+}
+
+.md-nav__title,
+.md-nav__link,
+.md-tabs__link {
+  color: #ffffff !important;
+}
+
+.md-nav__link:hover,
+.md-tabs__link:hover {
+  color: #4ed9b5 !important;
+}
+
+/* TABLAS */
+.md-typeset table {
+  border: 1px solid #4ed9b5;
+  background-color: #111111;
+}
+
+.md-typeset th {
+  background-color: #1a1a1a;
+  color: #4ed9b5;
+}
+
+/* RESALTE VISUAL */
+.md-typeset h1::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 60px;
+  background: linear-gradient(90deg, #4ed9b5, #ffffff);
+  margin-top: 6px;
+  border-radius: 2px;
+}
+/* === ENCABEZADO PERSONALIZADO === */
+
+.md-header,
+.md-tabs {
+  background-color: #4ed9b5 !important;  /* color del encabezado */
+  color: #000000 !important;             /* texto negro para contraste */
+  border-bottom: none !important;
+}
+
+/* Íconos y texto del navbar */
+.md-header__title,
+.md-tabs__link,
+.md-nav__link {
+  color: #000000 !important;
+  font-weight: 600;
+}
+
+/* Hover más elegante */
+.md-tabs__link:hover,
+.md-nav__link:hover {
+  color: #ffffff !important;
+  text-shadow: 0 0 5px #ffffff;
+}
+
+/* Icono del logo */
+.md-header__button.md-logo {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
+}
+
+/* Botón de búsqueda y toggle */
+.md-header__option {
+  color: #000000 !important;
+}
