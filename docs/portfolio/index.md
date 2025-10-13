@@ -106,10 +106,10 @@ Entrenamiento, curvas de pérdida, *callbacks* y evaluación final de modelos.
   [:octicons-file-24: Ver artículo](08b-deep-learning-extra.md){ .md-button }  
 
 - :material-plus: *Optimizadores e hiperparámetros: comparación de Adam, SGD y AdamW*  
-  [:octicons-file-24: Ver artículo](08c-Optimizadores-MLP.md){ .md-button }  
+  [:octicons-file-24: Ver artículo](08c-deep-learning-extra.md){ .md-button }  
 
 - :material-plus: *Callbacks en MLPs: EarlyStopping, LR Scheduler y ModelCheckpoint*  
-  [:octicons-file-24: Ver artículo](08d-Callbacks-MLP.md){ .md-button }
+  [:octicons-file-24: Ver artículo](08d-deep-learning-extra.md){ .md-button }
 
 </div>
 
