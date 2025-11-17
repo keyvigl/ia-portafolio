@@ -26,7 +26,6 @@ Exploración de datos, calidad, valores faltantes y patrones de supervivencia.
 **Trabajo extra:**  
 :material-plus: *EDA comparativa: Titanic vs. naufragios modernos (simulados)*  
 [:octicons-file-24: Ver artículo](01x-titanic-extra.md){ .md-button }
-
 ---
 
 ### ⚙️ Cómo mejorar un modelo predictivo con Feature Engineering  
@@ -114,44 +113,81 @@ Entrenamiento, curvas de pérdida, *callbacks* y evaluación final de modelos.
 </div>
 
 ---
-## 🧪 Ideas específicas para los **Trabajos extra**
-
-??? note "Práctica 1 — Titanic (EDA)"
-    - **Dataset alternativo:** [Airbnb listings](https://insideairbnb.com/get-the-data) o accidentes de aviación (Kaggle).  
-    - **Objetivo:** replicar *pipeline* de EDA (faltantes, outliers, correlaciones) y contar **insights accionables**.  
-    - **Plus:** *data story* con 3–5 visualizaciones narrativas.
-
-??? note "Práctica 2 — Feature Engineering"
-    - **Nuevas features:** `FamilySize`, `IsChild`, `CabinDeck`, *target encoding* controlado (sin leakage).  
-    - **Comparación:** LR vs. Árboles (DT/Random Forest) con el *mismo* set de features.  
-    - **Plus:** guarda las features con `joblib` para reproducibilidad (*mini feature store*).
-
-??? note "Práctica 3 — Regresión y Logística"
-    - **Regresión robusta:** Huber/Quantile para mitigar outliers (BostonHousing u otro dataset).  
-    - **Clasificación:** optimiza **umbral** con ROC/PR según costo de errores (FN > FP, etc.).  
-    - **Plus:** informe de **errores críticos** con casos ejemplo.
-
-??? note "Práctica 4 — Selección de Modelos"
-    - **Torneo:** agrega XGBoost/LightGBM y compara estabilidad (σ baja en CV).  
-    - **Curvas de aprendizaje:** *under/overfitting* vs. tamaño de datos.  
-    - **Plus:** matriz de **riesgos** (complejidad ↔ interpretabilidad).
-
-??? note "Práctica 5 — Clustering y PCA"
-    - **Algoritmos:** GMM con BIC/AIC, DBSCAN con *grid* de eps/min_samples.  
-    - **Estabilidad:** *bootstrap clustering* o ARI/NMI.  
-    - **Plus:** perfil de **segmentos** con acciones de marketing por cluster.
-
-??? note "Práctica 7 — De Perceptrón a Redes Neuronales"
-    - **Dataset:** Utiliza el dataset MNIST o Fashion MNIST.
-    - **Objetivo:** Construir y entrenar un Perceptrón simple para clasificación binaria.
-    - **Plus:** Experimenta con las funciones de activación (`relu`, `sigmoid`, `tanh`) y observa cómo afecta la convergencia y el rendimiento en Keras/TensorFlow.
-
-??? note "Práctica 8 — Experimentación"
-    - **Regularización:** Aplica capas de `Dropout` y `BatchNormalization` y compáralas con un modelo base sin regularización.
-    - **Callbacks:** Implementa `EarlyStopping` y `ModelCheckpoint` y documenta su impacto en el tiempo de entrenamiento y la calidad del modelo.
-    - **Plus:** Visualiza el historial de pérdida y precisión (*accuracy*) para identificar sobreajuste (*overfitting*).
 
 ---
+
+# 🧠 UT3 — Computer Vision  
+**Del reconocimiento de imágenes al análisis visual avanzado**
+
+> En esta unidad se exploran los fundamentos de la **visión por computadora** usando **TensorFlow/Keras**.  
+> Se implementan **redes neuronales convolucionales (CNNs)**, *transfer learning*, *data augmentation*, detección de objetos y segmentación.
+
+---
+
+<div class="grid cards" markdown>
+
+### 🧩 Clase 9 — CNNs y Transfer Learning  
+:material-image-filter: **Práctica 9 — CNNs y Transfer Learning con TensorFlow/Keras**  
+Implementación de **CNNs desde cero** y aplicación de **transfer learning** usando modelos preentrenados de `Keras Applications` (VGG16, ResNet, MobileNet).  
+Incluye visualización de *feature maps* y evaluación con métricas de clasificación.  
+[:octicons-arrow-right-24: Ver práctica](09-CNNs-Transfer-Learning.md){ .md-button .md-button--primary }  
+
+**Trabajo extra:**  
+:material-plus: *Comparativa entre arquitecturas preentrenadas (ResNet50 vs EfficientNetB0)*  
+[:octicons-file-24: Ver artículo](09x-transfer-extra.md){ .md-button }
+
+---
+
+### 🧪 Clase 10 — Data Augmentation Avanzado & XAI  
+:material-chart-bubble: **Práctica 10 — Data Augmentation con Mixup/CutMix & Explicabilidad**  
+Exploración de *data augmentation avanzado* con **Albumentations**, **Mixup**, **CutMix**, y técnicas de **explicabilidad (XAI)** como *GradCAM* e *Integrated Gradients*.  
+Dataset: *Food-101* — análisis de impacto en modelos convolucionales.  
+[:octicons-arrow-right-24: Ver práctica](10-Data-Augmentation-XAI.md){ .md-button .md-button--primary }  
+
+**Trabajo extra:**  
+:material-plus: *Ablation Study: efecto de cada técnica de aumento sobre la precisión final*  
+[:octicons-file-24: Ver artículo](10x-augmentation-extra.md){ .md-button }
+
+---
+
+### 🎯 Clase 11 — Object Detection & Tracking  
+:material-target-variant: **Práctica 11 — YOLOv8 Fine-tuning & Tracking**  
+Fine-tuning de **YOLOv8** en un dataset de frutas.  
+Evaluación con métricas **mAP, Precision, Recall**, análisis de errores y visualización de bounding boxes.  
+Incluye implementación de **object tracking** con IoU en videos.  
+[:octicons-arrow-right-24: Ver práctica](11-YOLOv8-Detection.md){ .md-button .md-button--primary }  
+
+**Trabajo extra:**  
+- :material-plus: *Tracking avanzado con DeepSORT y comparación FPS vs precisión*  
+  [:octicons-file-24: Ver artículo](11xb-Extra_YOLO.md){ .md-button }
+
+- :material-plus: *Comparación YOLOv8n vs Faster R-CNN en detección de frutas*  
+  [:octicons-file-24: Ver artículo](11xc_YOLO_vs_FRCNN.md){ .md-button }
+  
+- :material-plus: *Comparación Compleja de Algoritmos de Tracking*  
+  [:octicons-file-24: Ver artículo](11xd_tracking_comparacion.md){ .md-button }
+
+---
+
+### 🧬 Clase 12 — Segmentación con SAM  
+:material-shape-outline: **Práctica 12 — SAM Segmentation: Pretrained vs Fine-tuned**  
+Uso del **Segment Anything Model (SAM)** para segmentación de imágenes.  
+Comparación entre **SAM pretrained (zero-shot)** y **SAM fine-tuned** en *crack segmentation* (inspección de infraestructura).  
+Incluye prompting strategies (*point, box*), *encoder freezing*, métricas (IoU, Dice) y análisis de **impacto en casos reales**.  
+[:octicons-arrow-right-24: Ver práctica](12-SAM-Segmentation.md){ .md-button .md-button--primary }  
+
+**Trabajo extra:**  
+:material-plus: *SAM + Segment Anything 2: comparación con datasets industriales personalizados*  
+[:octicons-file-24: Ver artículo](12x-sam-extra.md){ .md-button }
+
+</div>
+
+---
+
+
+
+
+
 
 ## 🔄 Flujo de documentación
 
