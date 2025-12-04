@@ -203,8 +203,7 @@ Agentes reactivos con LangGraph: tool calling, memoria conversacional, multi-age
 **Trabajos extra:**  
 - :material-plus: *Agente con ReAct + auto-reflexión*  
   [:octicons-file-24: Ver artículo](15x-agentes-react.md){ .md-button }  
-- :material-plus: *LangGraph vs CrewAI vs AutoGen*  
-  [:octicons-file-24: Ver artículo](15xb-comparativa-frameworks.md){ .md-button }
+
 
 </div>
 
@@ -223,10 +222,7 @@ DVC + MLflow + Prefect + FastAPI + Docker + Evidently AI + GitHub Actions + Depl
 **Trabajos extra:**  
 - :material-plus: *Monitoreo con Prometheus + Grafana*  
   [:octicons-file-24: Ver artículo](16x-monitoring-extra.md){ .md-button }  
-- :material-plus: *MLflow vs W&B vs Comet.ml*  
-  [:octicons-file-24: Ver artículo](16xb-tracking-comparison.md){ .md-button }  
-- :material-plus: *Shadow deployment y canary release con KServe*  
-  [:octicons-file-24: Ver artículo](16xc-advanced-deployment.md){ .md-button }
+
 
 </div>
 
