@@ -46,7 +46,7 @@ Imputación avanzada, variables dummies, feature crosses, interacción polinómi
 ### 📈 Regresión lineal y logística: interpretación y optimización  
 :material-chart-line: **Práctica 3 — Regresión Lineal y Logística**  
 Comparación de modelos, métricas de evaluación, optimización del umbral de decisión y análisis de coeficientes.  
-[:octicons-arrow-right-24: Ver práctica](03-Regresion-Lineal-Logistica.md){ .md-button .md-button--primary }  
+[:octicons-arrow-right-24: Ver práctica](02-Regresion-Lineal-Logistica.md){ .md-button .md-button--primary }  
 
 **Trabajo extra:**  
 :material-plus: *Regresión robusta + Clasificación con umbral óptimo (ROC/PR)*  
@@ -57,7 +57,7 @@ Comparación de modelos, métricas de evaluación, optimización del umbral de d
 ### 🧠 Validación y selección de modelos  
 :material-check-decagram: **Práctica 4 — Validación y Selección de Modelos**  
 Pipelines, KFold/StratifiedKFold, GridSearchCV, RandomizedSearchCV y selección del mejor candidato.  
-[:octicons-arrow-right-24: Ver práctica](04-Validacion-Seleccion-deModelos.md){ .md-button .md-button--primary }  
+[:octicons-arrow-right-24: Ver práctica](03-Validacion-Seleccion-deModelos.md){ .md-button .md-button--primary }  
 
 **Trabajo extra:**  
 :material-plus: *Torneo extendido: XGBoost/LightGBM + curvas de aprendizaje y bias-variance*  
@@ -68,7 +68,7 @@ Pipelines, KFold/StratifiedKFold, GridSearchCV, RandomizedSearchCV y selección 
 ### 🧮 Segmentación inteligente: Clustering y reducción de dimensionalidad  
 :material-account-multiple: **Práctica 5 — Clustering y PCA (Mall Customers)**  
 K-Means, métricas Silhouette, elbow method y visualización con PCA.  
-[:octicons-arrow-right-24: Ver práctica](05-Clustering-PCA-Mall.md){ .md-button .md-button--primary }  
+[:octicons-arrow-right-24: Ver práctica](04-Clustering-PCA-Mall.md){ .md-button .md-button--primary }  
 
 **Trabajo extra:**  
 :material-plus: *Clustering avanzado: GMM/DBSCAN + validación de estabilidad y comparación*  
@@ -203,7 +203,8 @@ Agentes reactivos con LangGraph: tool calling, memoria conversacional, multi-age
 **Trabajos extra:**  
 - :material-plus: *Agente con ReAct + auto-reflexión*  
   [:octicons-file-24: Ver artículo](15x-agentes-react.md){ .md-button }  
-
+- :material-plus: *LangGraph vs CrewAI vs AutoGen*  
+  [:octicons-file-24: Ver artículo](15xb-comparativa-frameworks.md){ .md-button }
 
 </div>
 
@@ -222,7 +223,10 @@ DVC + MLflow + Prefect + FastAPI + Docker + Evidently AI + GitHub Actions + Depl
 **Trabajos extra:**  
 - :material-plus: *Monitoreo con Prometheus + Grafana*  
   [:octicons-file-24: Ver artículo](16x-monitoring-extra.md){ .md-button }  
-
+- :material-plus: *MLflow vs W&B vs Comet.ml*  
+  [:octicons-file-24: Ver artículo](16xb-tracking-comparison.md){ .md-button }  
+- :material-plus: *Shadow deployment y canary release con KServe*  
+  [:octicons-file-24: Ver artículo](16xc-advanced-deployment.md){ .md-button }
 
 </div>
 
