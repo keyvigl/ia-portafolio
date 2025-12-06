@@ -276,7 +276,7 @@ Vertex AI permite monitorear:
 - Alertas  
 - Degradación del modelo  
 
-![Interfaz](../assets/1508.jpg)
+![Interfaz](../assets/1508.gif)
 Imagen: “Vertex AI model monitoring dashboard”.
 
 ---
