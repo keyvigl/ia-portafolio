@@ -11,7 +11,7 @@ description: "Portafolio completo de Machine Learning, Deep Learning, Computer V
 Bienvenido/a a mi portafolio académico y profesional de Inteligencia Artificial.  
 Aquí documento **todas las prácticas y proyectos** del programa intensivo, con objetivos claros, metodología, resultados cuantitativos, evidencias visuales y reflexiones críticas.
 
-**Última actualización:** **18 de noviembre de 2025**  
+
 **Estado del portafolio:** **100% COMPLETADO** 🎉
 
 ---
