@@ -78,3 +78,6 @@ markdown_extensions:
 #   - Recursos: recursos.md
 extra_css:
   - assets/custom.css
+
+extra_javascript:
+  - assets/custom.js
