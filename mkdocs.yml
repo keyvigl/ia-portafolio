@@ -1,33 +1,48 @@
-site_name: "Portfolio"
+site_name: "Keyvi Garcia · AI Portfolio"
 site_url: https://keyvigl.github.io/ia-portafolio
+site_description: "Portafolio profesional de Inteligencia Artificial — Machine Learning, Deep Learning, Computer Vision, NLP y MLOps."
+site_author: "Keyvi Garcia"
 
 
 theme:
   name: material
   language: es
+  icon:
+    logo: material/brain
+    repo: fontawesome/brands/github
   features:
     - navigation.instant
+    - navigation.instant.progress
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - navigation.footer
+    - toc.follow
     - header.autohide
     - content.code.copy
+    - content.code.annotate
     - content.tabs.link
+    - content.tooltips
     - search.highlight
     - search.suggest
-    - toc.follow
+    - search.share
   palette:
-    - scheme: default
-      primary: indigo
+    # Esquema oscuro — apariencia principal (por defecto)
+    - scheme: slate
+      primary: black
       accent: cyan
       toggle:
-        icon: material/weather-night
-        name: Dark mode
-    - scheme: slate
-      primary: indigo
-      accent: lime
-      toggle:
         icon: material/weather-sunny
-        name: Light mode
+        name: Cambiar a modo claro
+    # Esquema claro
+    - scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo oscuro
   font:
     text: 'Inter'
     code: 'JetBrains Mono'
@@ -53,10 +68,22 @@ markdown_extensions:
   - toc:
       permalink: true
   - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.highlight
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.magiclink
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.caret
+  - pymdownx.tilde
+  - pymdownx.smartsymbols
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
@@ -76,6 +103,19 @@ markdown_extensions:
 #       - Regresión Lineal y Logística: portfolio/02-Regresion-Lineal-Logistica.md
 #       - Validación y Selección de Modelos: portfolio/03-Validacion-Seleccion-deModelos.md
 #   - Recursos: recursos.md
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/keyvigarcia/
+      name: LinkedIn
+    - icon: fontawesome/brands/github
+      link: https://github.com/keyvigl
+      name: GitHub
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:garciakeyvi657@gmail.com
+      name: Email
+
 extra_css:
   - assets/custom.css
 

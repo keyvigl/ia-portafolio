@@ -1,6 +1,7 @@
 ---
 title: "Portfolio · Keyvi Garcia"
 hide:
+  - navigation
   - toc
 ---
 

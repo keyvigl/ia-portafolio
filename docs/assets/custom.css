@@ -226,14 +226,17 @@
   font-weight: 900 !important;
   line-height: 1.05 !important;
   margin-bottom: 1.25rem !important;
-  background: linear-gradient(135deg, #ffffff 0%, var(--neon-cyan) 45%, var(--neon-purple) 100%) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  background-clip: text !important;
   animation: fadeInUp .8s ease .15s both;
   letter-spacing: -.04em !important;
   border: none !important;
   padding-bottom: 0 !important;
+}
+
+#typing-target {
+  background: linear-gradient(135deg, #ffffff 0%, var(--neon-cyan) 45%, var(--neon-purple) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .cursor-blink {
@@ -673,6 +676,248 @@
 }
 
 /* ================================================================
+   PORTFOLIO CARD GRID (Material .grid.cards)
+   ================================================================ */
+.md-typeset .grid.cards {
+  margin: 1.5rem 0 2rem;
+  gap: 1.1rem;
+}
+
+.md-typeset .grid.cards > ul {
+  gap: 1.1rem;
+}
+
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid.cards > :is(ul,ol) > li {
+  position: relative;
+  background: var(--card-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  padding: 1.4rem 1.45rem 1.5rem;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 22px rgba(0,0,0,.28);
+  transition: var(--t);
+  overflow: hidden;
+}
+
+/* top accent line that lights up on hover */
+.md-typeset .grid.cards > ul > li::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--neon-cyan), var(--neon-purple));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .4s var(--ease);
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+  transform: translateY(-6px);
+  border-color: rgba(0,229,255,.35);
+  box-shadow: 0 16px 46px rgba(0,229,255,.14), 0 6px 20px rgba(0,0,0,.45);
+}
+
+.md-typeset .grid.cards > ul > li:hover::before { transform: scaleX(1); }
+
+/* card title (first paragraph with icon + bold) */
+.md-typeset .grid.cards > ul > li > p:first-child {
+  font-size: 1.02rem;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  margin: 0 0 .2rem;
+  color: var(--md-default-fg-color);
+  display: flex;
+  align-items: center;
+  gap: .55rem;
+}
+
+.md-typeset .grid.cards > ul > li > p:first-child strong {
+  background: linear-gradient(135deg, var(--neon-cyan), #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* large card icon */
+.md-typeset .grid.cards .lg.middle,
+.md-typeset .grid.cards > ul > li > p:first-child .twemoji {
+  flex: 0 0 auto;
+}
+.md-typeset .grid.cards .twemoji.lg svg,
+.md-typeset .grid.cards .lg svg {
+  width: 1.6em;
+  height: 1.6em;
+  fill: var(--neon-cyan);
+  filter: drop-shadow(0 0 6px rgba(0,229,255,.35));
+}
+
+/* divider inside card */
+.md-typeset .grid.cards > ul > li hr {
+  margin: .7rem 0 .9rem;
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, var(--glass-border), transparent);
+}
+
+/* description text */
+.md-typeset .grid.cards > ul > li > p {
+  font-size: .865rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+/* CTA button inside card */
+.md-typeset .grid.cards .md-button {
+  margin-top: .35rem;
+  font-size: .8rem !important;
+  padding: .42em 1em !important;
+}
+
+/* extras footnote line */
+.md-typeset .grid.cards small {
+  display: block;
+  margin-top: .9rem;
+  padding-top: .75rem;
+  border-top: 1px dashed rgba(148,163,184,.18);
+  font-size: .76rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+.md-typeset .grid.cards small a { color: var(--neon-cyan); font-weight: 600; }
+[data-md-color-scheme="default"] .md-typeset .grid.cards small a { color: #7c3aed; }
+
+/* ================================================================
+   PAGE LEAD + UNIT SUBTITLES + STATUS BANNER
+   ================================================================ */
+.md-typeset .page-lead {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+  max-width: 46rem;
+  margin: .5rem 0 1.5rem;
+}
+.md-typeset .page-lead strong { color: var(--md-default-fg-color); }
+
+.md-typeset .unit-subtitle {
+  display: block;
+  margin: -.4rem 0 .4rem;
+  font-size: .95rem;
+  font-weight: 500;
+  color: var(--neon-cyan);
+  letter-spacing: .01em;
+}
+[data-md-color-scheme="default"] .md-typeset .unit-subtitle { color: #7c3aed; }
+
+.status-banner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0 1rem;
+}
+
+.status-banner__item {
+  position: relative;
+  background: var(--card-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 14px;
+  padding: 1.2rem .75rem;
+  text-align: center;
+  backdrop-filter: blur(12px);
+  transition: var(--t);
+  overflow: hidden;
+}
+.status-banner__item:hover { transform: translateY(-4px); border-color: rgba(0,229,255,.3); box-shadow: 0 10px 30px rgba(0,229,255,.12); }
+.status-banner__item--done::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 0%, rgba(16,185,129,.12), transparent 70%);
+}
+
+.status-banner__num {
+  display: block;
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1;
+  background: linear-gradient(135deg, var(--neon-cyan), var(--neon-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-variant-numeric: tabular-nums;
+}
+.status-banner__item--done .status-banner__num {
+  background: linear-gradient(135deg, var(--neon-green), #34d399);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.status-banner__lbl {
+  display: block;
+  margin-top: .35rem;
+  font-size: .72rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+[data-md-color-scheme="default"] .status-banner__num {
+  background: linear-gradient(135deg, #0284c7, #7c3aed);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* ================================================================
+   MERMAID DIAGRAM
+   ================================================================ */
+.md-typeset .mermaid {
+  background: rgba(15,23,42,.45);
+  border: 1px solid var(--glass-border);
+  border-radius: 14px;
+  padding: 1.5rem 1rem;
+  margin: 1.25rem 0;
+  text-align: center;
+}
+[data-md-color-scheme="default"] .md-typeset .mermaid {
+  background: rgba(255,255,255,.6);
+  border-color: rgba(14,165,233,.18);
+}
+
+/* ================================================================
+   HEADER / TABS POLISH
+   ================================================================ */
+/* keep anchor targets clear of the sticky header */
+.md-typeset :target { scroll-margin-top: 5rem; }
+
+/* refined active tab + hover underline */
+.md-tabs__item { height: 2.4rem; }
+.md-tabs__link { font-size: .76rem; letter-spacing: .02em; }
+
+/* search field width + focus glow */
+.md-search__input { font-size: .8rem; }
+[data-md-color-scheme="slate"] .md-search__form:focus-within {
+  border-color: rgba(0,229,255,.5);
+  box-shadow: 0 0 0 3px rgba(0,229,255,.12);
+}
+
+/* logo glow */
+.md-header__button.md-logo svg { filter: drop-shadow(0 0 6px rgba(0,229,255,.5)); }
+
+/* footer social icons */
+[data-md-color-scheme="slate"] .md-social__link:hover svg { fill: var(--neon-cyan); }
+
+/* horizontal rules as subtle gradient separators */
+.md-typeset hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--glass-border), transparent);
+  margin: 2rem 0;
+}
+
+/* readable content max width on inner pages */
+.md-grid { max-width: 65rem; }
+
+/* ================================================================
    MOBILE
    ================================================================ */
 @media (max-width: 768px) {
@@ -680,6 +925,7 @@
   .hero-title   { font-size: clamp(2.2rem, 12vw, 3.5rem) !important; }
   .stats-grid   { grid-template-columns: repeat(2, 1fr); }
   .features-grid { grid-template-columns: 1fr; }
+  .status-banner { grid-template-columns: repeat(2, 1fr); }
   .hero-cta     { flex-direction: column; align-items: center; }
   .btn-primary,
   .btn-secondary { width: 100%; justify-content: center; max-width: 280px; }
